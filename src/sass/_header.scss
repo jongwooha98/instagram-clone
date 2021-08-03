@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.upload__form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  input {
+    display: none;
+  }
+  label:hover {
+    cursor: pointer;
+  }
+  .upload__icon {
+    font-size: 3rem;
+    color: var(--primary);
+  }
+}

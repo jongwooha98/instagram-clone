@@ -14,12 +14,7 @@ function Modal({ selectedImg, setSelectedImg }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <img
-        src={selectedImg}
-        alt=""
-        initial={{ y: '-100vh' }}
-        animate={{ y: 0 }}
-      />
+      <img src={selectedImg} alt="" />
     </motion.div>
   );
 }

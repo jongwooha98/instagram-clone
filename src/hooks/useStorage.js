@@ -27,7 +27,24 @@ const useStorage = (file) => {
       async () => {
         const url = await storageRef.getDownloadURL();
         const createdAt = timestamp();
-        collectionRef.add({ url: url, createdAt });
+
+        function getMeta(url) {
+          var img = new Image();
+          img.src = url;
+          img.onload = function () {
+            const imgWidth = this.width;
+            const imgHeight = this.height;
+            collectionRef.add({
+              width: imgWidth,
+              height: imgHeight,
+              src: url,
+              createdAt: createdAt,
+            });
+          };
+        }
+
+        // collectionRef.add({});
+        getMeta(url);
         setUrl(url);
       }
     );

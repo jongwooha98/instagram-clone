@@ -5,12 +5,12 @@ import 'firebase/firestore'; //database
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: 'AIzaSyCgLXs9Ams9fza-kwtWGIJ7a6piLXewO6c',
-  authDomain: 'photo-gallery-f68a7.firebaseapp.com',
-  projectId: 'photo-gallery-f68a7',
-  storageBucket: 'photo-gallery-f68a7.appspot.com',
-  messagingSenderId: '213063268655',
-  appId: '1:213063268655:web:22d4da2993e2a52f36c9da',
+  apiKey: 'AIzaSyA-fXseo0uFwFFo72nRIl-2rH2JxQccr44',
+  authDomain: 'photo-gallery-4caa0.firebaseapp.com',
+  projectId: 'photo-gallery-4caa0',
+  storageBucket: 'photo-gallery-4caa0.appspot.com',
+  messagingSenderId: '4343727597',
+  appId: '1:4343727597:web:4a0f8fd47ec8234ca593e4',
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
