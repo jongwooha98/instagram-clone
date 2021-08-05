@@ -25,7 +25,7 @@ function ImageGrid({ setSelectedImg }) {
   return (
     //
     <div>
-      <Gallery photos={docs} onClick={openLightbox} />
+      <Gallery photos={docs} onClick={openLightbox} margin={5} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
